@@ -1,4 +1,4 @@
-package as.florenko.conditional.devprofile;
+package as.florenko.conditional.profiles;
 import as.florenko.conditional.systemprofile.SystemProfile;
 
 public class DevProfile implements SystemProfile {

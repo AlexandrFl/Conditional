@@ -18,5 +18,4 @@ public class Controller {
     public String getProfile() {
         return profile.getProfile();
     }
-
 }

@@ -1,5 +1,4 @@
-package as.florenko.conditional.productionprofile;
-
+package as.florenko.conditional.profiles;
 import as.florenko.conditional.systemprofile.SystemProfile;
 
 public class ProductionProfile implements SystemProfile {

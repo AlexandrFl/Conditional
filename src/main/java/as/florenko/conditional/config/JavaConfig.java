@@ -1,7 +1,7 @@
-package as.florenko.conditional.cofig;
+package as.florenko.conditional.config;
 
-import as.florenko.conditional.devprofile.DevProfile;
-import as.florenko.conditional.productionprofile.ProductionProfile;
+import as.florenko.conditional.profiles.DevProfile;
+import as.florenko.conditional.profiles.ProductionProfile;
 import as.florenko.conditional.systemprofile.SystemProfile;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class JavaConfig {
 
     @Bean
-    @ConditionalOnProperty (prefix = "netology.profile", name = "dev", havingValue = "true")
+    @ConditionalOnProperty (prefix = "netology.profile", name = "dev", havingValue = "true", matchIfMissing = true)
     public SystemProfile devProfile() {
         return new DevProfile();
     }
